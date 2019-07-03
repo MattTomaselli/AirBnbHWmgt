@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab One
+      Login
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,11 +10,19 @@
     <ion-card class="welcome-card">
       <ion-img src="/assets/shapes.svg"></ion-img>
       <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
+        <ion-card-subtitle>Please Login</ion-card-subtitle>
+        <ion-card-title>Provide your email and password</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
+        <form>
+          Email:<br>
+          <input type="text" placeholder="sexy@you.com" name="firstname"><br>
+          Password:<br>
+          <input type="text" placeholder="caniguess" name="lastname">
+        </form>
+        <ion-button href="/tabs/tab2" >Login</ion-button> 
+        <br>
+        <ion-button href="/profile" >Go to Profile</ion-button>
       </ion-card-content>
     </ion-card>
     <ion-list lines="none">

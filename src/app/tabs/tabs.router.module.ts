@@ -35,6 +35,24 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'inbox',
+        children: [
+          {
+            path: '',
+            loadChildren: '../inbox/inbox.module#InboxPageModule'
+          }
+        ]
+      },
+      {
+        path: 'trips',
+        children: [
+          {
+            path: '',
+            loadChildren: '../trips/trips.module#TripsPageModule'
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
